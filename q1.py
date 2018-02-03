@@ -76,9 +76,6 @@ class State:
 
 		new_tour[ind1] = self.tour[ind2]
 		new_tour[ind2] = self.tour[ind1]
-		# ATTENTION: THIS IS JUST FOR NOW, tour_cost() DOES NOT NEED TO BE CALLED, CAN JUST PERFORM SOME
-		# ARITHMETIC ON THE OLD COST TO GET NEW COST BUT I'M TOO LAZY RIGHT NOW
-		# TODO: FIX LATER
 		return State(new_tour, tour_cost(new_tour))
 
 # takes in the number of cities
